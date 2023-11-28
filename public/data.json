@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "name": "Capuchino",
+    "price": 15,
+    "img": "capuchino.png",
+    "quanty": 1
+  },
+  {
+    "id": 2,
+    "name": "Cortado",
+    "price": 10,
+    "img": "cortado.png",
+    "quanty": 1
+  },
+  {
+    "id": 3,
+    "name": "Espresso",
+    "price": 8.5,
+    "img": "espresso.png",
+    "quanty": 1
+  },
+  {
+    "id": 4,
+    "name": "Frappe",
+    "price": 20,
+    "img": "frappe.png",
+    "quanty": 1
+  }
+]

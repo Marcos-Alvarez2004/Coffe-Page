@@ -1,0 +1,109 @@
+#galeria {
+  margin-bottom: 3%;
+}
+
+.title-galery {
+  text-align: center;
+  font-size: 50px;
+  color: var(--color-mine-shark);
+  font-weight: 500;
+  margin-bottom: 5%;
+}
+
+.container-galery {
+  display: grid;
+  grid-template-columns: repeat(3, 400px);
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  grid-template-areas:
+    "AmericanCoffe PeopleCoffe BlackCoffe"
+    "MochaCoffe PeopleCoffe ColdCoffe";
+  gap: 20px;
+}
+
+.card-galery {
+  height: 100%;
+  width: 100%;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.card-galery h3 {
+  background-color: var(--color-twine);
+  color: var(--color-white);
+  font-weight: 600;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.text-galery {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+}
+
+.text-galery h4 {
+  color: var(--color-white);
+  font-weight: 500;
+  font-size: 30px;
+}
+
+.text-galery p {
+  font-size: 16px;
+  color: var(--color-white);
+}
+
+.text-galery button {
+  margin-top: 30px;
+  padding: 0.8rem 1.2rem;
+  color: var(--color-white);
+  background-color: var(--color-mine-shark);
+  border: none;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.text-galery button:hover {
+  background-color: var(--color-white);
+  color: var(--color-mine-shark);
+}
+
+#item1 {
+  grid-area: AmericanCoffe;
+}
+
+#item2 {
+  grid-area: MochaCoffe;
+}
+
+#item3 {
+  grid-area: PeopleCoffe;
+}
+
+#item3 img {
+  height: 100%;
+}
+
+#item4 {
+  grid-area: BlackCoffe;
+}
+
+#item5 {
+  grid-area: ColdCoffe;
+}
+
+.img-galery {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}

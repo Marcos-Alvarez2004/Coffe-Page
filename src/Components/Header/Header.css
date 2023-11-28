@@ -1,0 +1,51 @@
+/* HEADER */
+
+.logo {
+  height: auto;
+  max-width: 3%;
+}
+
+.cabezera {
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  background-color: var(--color-twine);
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: 0 auto;
+  padding: 10px 60px;
+}
+
+/* MENU */
+
+.lista li {
+  display: inline-block;
+  padding: 0 30px;
+}
+
+.lista li a {
+  color: var(--color-mine-shark);
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  user-select: none;
+  transition: 0.2s;
+}
+
+.lista li a:hover {
+  color: var(--color-iron);
+}
+
+.btn-cart {
+  font-size: 40px;
+  margin-right: 50px;
+  color: var(--color-mine-shark);
+  transition: 0.2s;
+}
+
+.btn-cart:hover {
+  color: var(--color-white);
+}
