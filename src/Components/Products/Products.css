@@ -66,3 +66,21 @@ img {
   height: 250px;
   transition: 0.2s;
 }
+
+@media screen and (max-width: 1260px) {
+  .container-grid-products {
+    grid-template-columns: repeat(2, 280px);
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .container-grid-products {
+    grid-template-columns: 280px;
+  }
+}
+
+@media screen and (max-width: 310px) {
+  .container-grid-products {
+    grid-template-columns: 200px;
+  }
+}

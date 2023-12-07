@@ -1,5 +1,5 @@
 .container-flex {
-  width: 100%;
+  width: 100vw;
 }
 
 .container-img {
@@ -53,4 +53,16 @@
 .container-text button:hover {
   color: var(--color-twine);
   background-color: var(--color-white);
+}
+
+@media screen and (max-width: 768px) {
+  .container-text {
+    right: 0;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .container-text {
+    right: -20%;
+  }
 }

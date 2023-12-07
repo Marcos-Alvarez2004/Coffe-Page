@@ -8,8 +8,8 @@ const Footer = () => {
     <footer>
       <section className="container-grid-footer">
         <div className="column-footer ">
-          <div lassName="title-footer">
-            <h3 className="title-footer">Nosotros</h3>
+          <div className="title-footer">
+            <h3>Nosotros</h3>
           </div>
 
           <div className="about-us">
@@ -69,8 +69,8 @@ const Footer = () => {
           </ul>
         </div>
         <div className="column-footer contact">
-          <div lassName="title-footer">
-            <h3 className="title-footer">Contacto</h3>
+          <div className="title-footer">
+            <h3>Contacto</h3>
           </div>
           <p>
             <b>Dirección:</b> Buenos Aires, 9 de julio.

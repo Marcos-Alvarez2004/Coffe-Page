@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { dataContext } from "../DataContext/DataContext";
 import { Link } from "react-router-dom";
 import { RiShoppingBagFill } from "react-icons/ri";
@@ -9,6 +9,9 @@ import "./Header.css";
 
 const Header = () => {
   const { cart } = useContext(dataContext);
+
+  const [openMenu, setOpenMenu] = useState(false);
+
   return (
     <header className="cabezera">
       <svg
@@ -111,7 +114,7 @@ m-281 -1497 c23 -20 23 -69 2 -123 -27 -66 -82 -80 -126 -32 -46 49 -44 79 7
         </g>
       </svg>
       <nav className="menu" id="menu-js">
-        <ul className="lista">
+        <ul className={`lista ${openMenu && "open"}`}>
           <li>
             <a to="/" href="#inicio">
               Inicio
@@ -129,6 +132,14 @@ m-281 -1497 c23 -20 23 -69 2 -123 -27 -66 -82 -80 -126 -32 -46 49 -44 79 7
             <a href="#testimonio">Testimonios</a>
           </li>
         </ul>
+        <div
+          className={`nav-toggle ${openMenu && "open"}`}
+          onClick={() => setOpenMenu(!openMenu)}
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </nav>
       <Link className="btn-cart" to="/cart">
         <RiShoppingBagFill />
