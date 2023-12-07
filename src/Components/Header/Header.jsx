@@ -125,7 +125,7 @@ m-281 -1497 c23 -20 23 -69 2 -123 -27 -66 -82 -80 -126 -32 -46 49 -44 79 7
               Productos
             </a>
           </li>
-          <li>
+          <li id="galeria">
             <a href="#galeria">Galeria</a>
           </li>
           <li>
